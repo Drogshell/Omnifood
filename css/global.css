@@ -16,6 +16,11 @@ Colours:
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -69,13 +74,30 @@ strong {
     margin-bottom: 3rem;
 }
 
-.btn:link, .btn:visited {
+.btn,
+.btn:link,
+.btn:visited {
     display: inline-block;
     text-decoration: none;
     font-size: 2rem;
+    font-family: inherit;
     padding: 1.6rem 3.2rem;
     border-radius: 9px;
+    border: none;
+    cursor: pointer;
     transition: all 0.3s;
+}
+
+.btn-form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn-form:hover {
+    background-color: #fff;
+    color: #555;
 }
 
 .btn-cta:link, .btn:visited {
@@ -137,6 +159,10 @@ strong {
     column-gap: 6.4rem;
 }
 
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
 .grid-2-cols {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -149,6 +175,30 @@ strong {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-5-cols {
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-center-vertical {
     align-items: center;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
 }
