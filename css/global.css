@@ -23,6 +23,7 @@ Colours:
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
     font-weight: 400;
     color: #555;
     margin-bottom: 9.6rem;
+    overflow-x: hidden;
 }
 
 strong {
@@ -175,10 +177,6 @@ strong {
     grid-template-columns: repeat(4, 1fr);
 }
 
-.grid-5-cols {
-    grid-template-columns: repeat(5, 1fr);
-}
-
 .grid-center-vertical {
     align-items: center;
 }
@@ -195,6 +193,7 @@ strong {
     font-size: 1.8rem;
     align-items: center;
     gap: 1.6rem;
+    line-height: 1.2;
 }
 
 .list-icon {
