@@ -49,7 +49,7 @@
     }
 }
 
-/* 940/16 = 59em */
+/* Smaller tablets 940/16 = 59em */
 @media (max-width: 59em) {
 
     html {
@@ -110,10 +110,12 @@
 
     .btn-mobile-toggle {
         display: block;
+        z-index: 9999;
     }
 
     .main-navbar {
-        background-color: rgba(253, 242, 233, 0.95);
+        background-color: rgba(253, 242, 233, 0.7);
+        backdrop-filter: blur(10px);
         position: absolute;
         top: 0;
         left: 0;
@@ -258,7 +260,5 @@
             height: 32rem;
             grid-row: 1;
         }
-
     }
-
 }
